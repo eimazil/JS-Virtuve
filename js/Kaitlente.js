@@ -36,7 +36,7 @@ class Kaitlente {
     // });
     jungikliaiArr.forEach((jungiklisEl) => {
       jungiklisEl.addEventListener("click", (e) => {
-        const targetJungiklis = e.target(".jungiklis");
+        const targetJungiklis = e.target.closest(".jungiklis");
 
         const targetIndex = jungikliaiArr.findIndex(
           (jungiklis) => jungiklis === targetJungiklis
